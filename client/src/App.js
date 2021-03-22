@@ -69,7 +69,9 @@ function App() {
           setPlaceholder(maxID);
         } else {
           setResults([...results, ...data.statuses.slice(5)]);
-          setHashTags([...new Set([...hashTags, ...getHashTags(data.statuses)])]);
+          // setHashTags([...new Set([...hashTags, ...getHashTags(data.statuses)])]);
+          const dedupHashTags = [...new Set([...hashTags, ...getHashTags(data.statuses)])]
+          setHashTags(dedupHashTags);
           setPlaceholder(maxID);
           setNext(false)
         }
