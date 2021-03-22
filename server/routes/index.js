@@ -3,8 +3,6 @@ const router = express.Router()
 const TWITTER_API_TOKEN = process.env.TWITTER_API_TOKEN
 const axios = require('axios');
 
-console.log(TWITTER_API_TOKEN);
-
 router.post('/search', async function (req, res) {
   const { query } = req.body
   const url = `https://api.twitter.com/1.1/search/tweets.json?${query}`
