@@ -25,3 +25,6 @@ TWITTER_API_TOKEN=<YOUR_BEARER_TOKEN>
 8.) run yarn start
 
 9.) Navigate to http://localhost:3000/ in a browser and start searching tweet for keywords.
+
+--
+Twitter Search Science 37 Code Challenge
